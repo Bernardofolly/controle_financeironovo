@@ -1,0 +1,76 @@
+#relatorioPeriodo {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #formRelatorio {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #formRelatorio label {
+    font-weight: bold;
+  }
+  
+  #formRelatorio button {
+    background-color: #4a4cff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #saldoTotal {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #2b972b;
+  }
+  
+  #graficos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .grafico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #graficoReceitas, #graficoDespesas {
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+  
+  #detalhamento {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  #detalhamento h3 {
+    text-align: center;
+  }
+  
+  #detalhamento h4 {
+    margin-bottom: 5px;
+  }
+  
+  #detalhamento ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #detalhamento li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }

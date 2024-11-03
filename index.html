@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho localStorage</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="formTransacao">
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+        
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" step="0.01" required>
+        
+        <label for="categoria">Categoria:</label>
+        <input type="text" id="categoria" required>
+        
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" required>
+          <option value="receita">Receita</option>
+          <option value="despesa">Despesa</option>
+        </select>
+        
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <div id="relatorioPeriodo">
+        <h1>Resultado por Período</h1>
+        
+        <!-- Formulário de Seleção de Período -->
+        <form id="formRelatorio">
+          <label for="dataInicial">Início:</label>
+          <input type="date" id="dataInicial" required>
+          
+          <label for="dataFinal">Término:</label>
+          <input type="date" id="dataFinal" required>
+          
+          <button type="submit">Pesquisar</button>
+        </form>
+      
+        <!-- Saldo Total -->
+        <div id="saldoTotal">
+          <h2>R$ <span id="valorSaldo">0,00</span></h2>
+          <p id="mensagemSaldo">Parabéns! Suas despesas estão equilibradas</p>
+        </div>
+        
+        <!-- Gráficos Placeholder -->
+        <div id="graficos">
+          <div class="grafico">
+            <canvas id="graficoReceitas"></canvas>
+            <p>Receitas</p>
+          </div>
+          <div class="grafico">
+            <canvas id="graficoDespesas"></canvas>
+            <p>Despesas</p>
+          </div>
+        </div>
+      
+        <!-- Detalhamento das Transações -->
+        <div id="detalhamento">
+          <h3>Detalhamento</h3>
+          <div id="receitasDetalhes">
+            <h4>Receitas</h4>
+            <ul id="listaReceitas"></ul>
+          </div>
+          <div id="despesasDetalhes">
+            <h4>Despesas</h4>
+            <ul id="listaDespesas"></ul>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
